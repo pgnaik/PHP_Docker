@@ -1,0 +1,5 @@
+# Use the base MySQL image
+FROM mysql:latest
+ENV MYSQL_ROOT_PASSWORD=12345
+# Copy the MySQL data into the image
+COPY ./dump/mydb.sql /docker-entrypoint-initdb.d
