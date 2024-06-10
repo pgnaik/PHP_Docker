@@ -29,7 +29,7 @@ services:
         links:
             - db:db
         ports:
-            - 82:80
+            - 90:80
         environment:
             MYSQL_USER: root
             MYSQL_PASSWORD: 12345
