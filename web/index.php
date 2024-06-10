@@ -41,7 +41,7 @@
         if (!$conn) {
             die("Connection failed: " . mysqli_connect_error());
         }
-        $query = 'SELECT * FROM Student';
+        $query = 'SELECT * FROM student';
         $result = mysqli_query($conn, $query);
         if ($result) {
             echo '<table class="table table-striped table-bordered">';
