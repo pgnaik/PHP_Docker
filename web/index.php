@@ -37,7 +37,7 @@
     <div class="container">
        
         <?php
-        $conn = mysqli_connect('db', 'root', '12345', "myDb");
+        $conn = mysqli_connect('db', 'root', '12345', "institute");
         if (!$conn) {
             die("Connection failed: " . mysqli_connect_error());
         }
