@@ -4,7 +4,6 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile.web
-    image: pgn123/web:33.0  # Specify the custom image name
     volumes:
       - ./bookdeck1:/var/www/html
     ports:
@@ -13,7 +12,6 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile.db
-    image: pgn123/database:33.0  # Specify the custom image name
     container_name: docker-db-1 
     ports:
       - 3306:3306
