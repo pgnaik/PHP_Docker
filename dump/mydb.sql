@@ -7,7 +7,7 @@ CREATE TABLE `student` (
 );
 
 
-INSERT INTO `Person` (`id`, `name`) VALUES
+INSERT INTO `student` (`rollno`, `name`) VALUES
 (1, 'Maya'),
 (2, 'Milan'),
 (3, 'Sachin'),
