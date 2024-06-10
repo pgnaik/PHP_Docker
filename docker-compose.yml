@@ -18,7 +18,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: 12345
     volumes:
-      - db_data:/var/lib/mysql
+      - db_data1:/var/lib/mysql
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     restart: always
@@ -29,4 +29,4 @@ services:
       MYSQL_ROOT_PASSWORD: 12345
 
 volumes:
-  db_data:
+  db_data1:
