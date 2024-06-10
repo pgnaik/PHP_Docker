@@ -21,8 +21,7 @@ services:
     volumes:
       - ./dump:/docker-entrypoint-initdb.d
       - persistent:/var/lib/mysql
-    networks:
-      - mynetwork
+   
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -34,12 +33,6 @@ services:
       - "90:80"
     depends_on:
       - db
-    networks:
-      - mynetwork
-
-networks:
-  mynetwork:
-    driver: bridge
-
+   
 volumes:
   persistent:
