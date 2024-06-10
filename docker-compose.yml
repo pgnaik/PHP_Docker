@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile.web
     volumes:
-      - ./bookdeck1:/var/www/html
+      - ./web:/var/www/html
     ports:
       - 80:80
   db:
