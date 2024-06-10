@@ -8,8 +8,6 @@ services:
       - ./web:/var/www/html/
     depends_on:
       - db
-    networks:
-      - mynetwork
 
   db:
     image: mysql:latest
